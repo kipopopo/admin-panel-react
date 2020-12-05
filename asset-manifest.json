@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/admin-panel-react/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/admin-panel-react/static/js/main.c866af83.chunk.js",
+    "main.js.map": "/admin-panel-react/static/js/main.c866af83.chunk.js.map",
+    "runtime-main.js": "/admin-panel-react/static/js/runtime-main.159aa3e0.js",
+    "runtime-main.js.map": "/admin-panel-react/static/js/runtime-main.159aa3e0.js.map",
+    "static/js/2.b1eefa27.chunk.js": "/admin-panel-react/static/js/2.b1eefa27.chunk.js",
+    "static/js/2.b1eefa27.chunk.js.map": "/admin-panel-react/static/js/2.b1eefa27.chunk.js.map",
+    "static/js/3.c4beb89d.chunk.js": "/admin-panel-react/static/js/3.c4beb89d.chunk.js",
+    "static/js/3.c4beb89d.chunk.js.map": "/admin-panel-react/static/js/3.c4beb89d.chunk.js.map",
+    "index.html": "/admin-panel-react/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/admin-panel-react/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.b1eefa27.chunk.js.LICENSE.txt": "/admin-panel-react/static/js/2.b1eefa27.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/admin-panel-react/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.159aa3e0.js",
+    "static/js/2.b1eefa27.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.c866af83.chunk.js"
+  ]
+}
