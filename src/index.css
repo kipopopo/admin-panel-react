@@ -2,6 +2,14 @@
   font-family: 'Roobert';
   src: local('Roobert'), url('./fonts/Roobert-Regular.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Roobert-Bold';
+  src: local('Roobert-Bold'), url('./fonts/Roobert-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Roobert-Heavy';
+  src: local('Roobert-Heavy'), url('./fonts/Roobert-Heavy.otf') format('opentype');
+}
 body {
   margin: 0;
   font-family: 'Roobert', 'Segoe UI', 'Roboto', 'Oxygen',
