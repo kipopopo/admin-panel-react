@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/admin-panel-react/static/css/main.c95b97d5.chunk.css",
-    "main.js": "/admin-panel-react/static/js/main.cd12f8d9.chunk.js",
-    "main.js.map": "/admin-panel-react/static/js/main.cd12f8d9.chunk.js.map",
+    "main.css": "/admin-panel-react/static/css/main.892909ea.chunk.css",
+    "main.js": "/admin-panel-react/static/js/main.556683a4.chunk.js",
+    "main.js.map": "/admin-panel-react/static/js/main.556683a4.chunk.js.map",
     "runtime-main.js": "/admin-panel-react/static/js/runtime-main.4a6ee404.js",
     "runtime-main.js.map": "/admin-panel-react/static/js/runtime-main.4a6ee404.js.map",
     "static/js/2.9e8fd3d5.chunk.js": "/admin-panel-react/static/js/2.9e8fd3d5.chunk.js",
@@ -10,15 +10,18 @@
     "static/js/3.c8d5aa76.chunk.js": "/admin-panel-react/static/js/3.c8d5aa76.chunk.js",
     "static/js/3.c8d5aa76.chunk.js.map": "/admin-panel-react/static/js/3.c8d5aa76.chunk.js.map",
     "index.html": "/admin-panel-react/index.html",
-    "static/css/main.c95b97d5.chunk.css.map": "/admin-panel-react/static/css/main.c95b97d5.chunk.css.map",
+    "static/css/main.892909ea.chunk.css.map": "/admin-panel-react/static/css/main.892909ea.chunk.css.map",
     "static/js/2.9e8fd3d5.chunk.js.LICENSE.txt": "/admin-panel-react/static/js/2.9e8fd3d5.chunk.js.LICENSE.txt",
     "static/media/index.css": "/admin-panel-react/static/media/Roobert-Regular.cb46cff6.otf",
-    "static/media/logo-no-trace.8798001d.png": "/admin-panel-react/static/media/logo-no-trace.8798001d.png"
+    "static/media/bell.0001c48b.svg": "/admin-panel-react/static/media/bell.0001c48b.svg",
+    "static/media/logo-no-trace.8798001d.png": "/admin-panel-react/static/media/logo-no-trace.8798001d.png",
+    "static/media/menu-hamburger.51815719.svg": "/admin-panel-react/static/media/menu-hamburger.51815719.svg",
+    "static/media/user-profile.a85c8195.svg": "/admin-panel-react/static/media/user-profile.a85c8195.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4a6ee404.js",
     "static/js/2.9e8fd3d5.chunk.js",
-    "static/css/main.c95b97d5.chunk.css",
-    "static/js/main.cd12f8d9.chunk.js"
+    "static/css/main.892909ea.chunk.css",
+    "static/js/main.556683a4.chunk.js"
   ]
 }
