@@ -48,6 +48,7 @@
     z-index: 1000;
 }
 .sidebar {
+    background-color: #f7f7f7;
     bottom: 0px;
     box-shadow: rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
@@ -77,6 +78,7 @@
     min-height: 100%;
     overflow-x: hidden;
 }
+
 /* classNames css */
 .brand-link {
     display: block;
@@ -88,7 +90,7 @@
     text-align: left;
     text-decoration: none;
     white-space: nowrap;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #e4e3e3;
 }
 .brand-image {
     box-sizing: border-box;
@@ -104,4 +106,33 @@
     color: #333;
     font-family: 'Roobert-Bold', sans-serif;
     font-size: 2rem;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+}
+.navbar-expand, .navbar-nav{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.nav-item {
+    margin: 0;
+}
+.nav-link {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    position: relative;
+    display: block;
+}
+.nav-link-icon {
+    height: 20px;
+    fill: #f2ac0a;
+}
+
+/* Misc styles */
+.ml-auto {
+    margin-left: auto !important;
 }
