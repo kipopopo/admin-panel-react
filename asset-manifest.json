@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/admin-panel-react/static/css/main.33329862.chunk.css",
-    "main.js": "/admin-panel-react/static/js/main.7bfdf8d0.chunk.js",
-    "main.js.map": "/admin-panel-react/static/js/main.7bfdf8d0.chunk.js.map",
+    "main.css": "/admin-panel-react/static/css/main.7fee366a.chunk.css",
+    "main.js": "/admin-panel-react/static/js/main.91789793.chunk.js",
+    "main.js.map": "/admin-panel-react/static/js/main.91789793.chunk.js.map",
     "runtime-main.js": "/admin-panel-react/static/js/runtime-main.922dfa72.js",
     "runtime-main.js.map": "/admin-panel-react/static/js/runtime-main.922dfa72.js.map",
     "static/js/2.e1afede9.chunk.js": "/admin-panel-react/static/js/2.e1afede9.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e325e258.chunk.js": "/admin-panel-react/static/js/3.e325e258.chunk.js",
     "static/js/3.e325e258.chunk.js.map": "/admin-panel-react/static/js/3.e325e258.chunk.js.map",
     "index.html": "/admin-panel-react/index.html",
-    "static/css/main.33329862.chunk.css.map": "/admin-panel-react/static/css/main.33329862.chunk.css.map",
+    "static/css/main.7fee366a.chunk.css.map": "/admin-panel-react/static/css/main.7fee366a.chunk.css.map",
     "static/js/2.e1afede9.chunk.js.LICENSE.txt": "/admin-panel-react/static/js/2.e1afede9.chunk.js.LICENSE.txt",
     "static/media/index.css": "/admin-panel-react/static/media/Roobert-Regular.cb46cff6.otf",
     "static/media/bell.0001c48b.svg": "/admin-panel-react/static/media/bell.0001c48b.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.922dfa72.js",
     "static/js/2.e1afede9.chunk.js",
-    "static/css/main.33329862.chunk.css",
-    "static/js/main.7bfdf8d0.chunk.js"
+    "static/css/main.7fee366a.chunk.css",
+    "static/js/main.91789793.chunk.js"
   ]
 }
