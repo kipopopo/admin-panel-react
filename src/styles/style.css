@@ -129,7 +129,16 @@
 }
 .nav-link-icon {
     height: 20px;
-    fill: #f2ac0a;
+    fill: #333333;
+}
+.navbar-nav > .nav-item > button.nav-link {
+    max-width: 56px;
+    max-height: 39px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.navbar-nav > .nav-item > button.nav-link:focus {
+    outline: none;
 }
 
 /* Misc styles */
