@@ -140,7 +140,40 @@
 .navbar-nav > .nav-item > button.nav-link:focus {
     outline: none;
 }
-
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    float: none;
+    display: none;
+    min-width: 280px;
+    padding: 0 0 0 20px;
+    background-color: #ffffff;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    margin: .125rem 0 0 0;
+    font-size: 1rem;
+    border: 0.25rem solid #333333;
+    border-radius: .25rem;
+    box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.025);
+    background-clip: padding-box;
+}
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+    border-radius: .75rem 0 .75rem .75rem;
+}
+.dropdown-menu-show {
+    display: block !important;
+}
+.dropdown-menu-hide {
+    display: none !important;
+}
 /* Misc styles */
 .ml-auto {
     margin-left: auto !important;
