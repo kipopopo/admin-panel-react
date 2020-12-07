@@ -174,9 +174,17 @@
 }
 .dropdown-menu-hide {
     display: none !important;
-    z-index: 1000;
 }
 /* Misc styles */
 .ml-auto {
     margin-left: auto !important;
+}
+.show-front {
+    z-index: 2000 !important;
+}
+.hide-back {
+    z-index: 1000 !important;
+}
+#dropdown {
+    display: block;
 }

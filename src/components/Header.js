@@ -32,7 +32,7 @@ export class Header extends React.Component {
         const styles = this.props.expandNavbar
         let showHide_dropdownBell = this.state.showNotification ? "dropdown-menu-show" : "dropdown-menu-hide"
         let showHide_dropdownUserProfile = this.state.showUserProfile ? "dropdown-menu-show" : "dropdown-menu-hide"
-        
+
         return (
             <nav id="header navbar-expand" className="header" style={styles}>
                 <ul className="navbar-nav">
