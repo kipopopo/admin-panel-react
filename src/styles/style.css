@@ -170,9 +170,11 @@
 }
 .dropdown-menu-show {
     display: block !important;
+    z-index: 2000;
 }
 .dropdown-menu-hide {
     display: none !important;
+    z-index: 1000;
 }
 /* Misc styles */
 .ml-auto {
