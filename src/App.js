@@ -1,11 +1,5 @@
 import React from 'react';
-import './App.css';
-import './styles/style.css';
-
-import { Content } from './components/Content';
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import { Sidebar } from './components/Sidebar';
+import './styles/main.scss';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,18 +30,6 @@ class App extends React.Component {
     const {showSidebar} = this.state
     return (
       <div className="wrapper">
-        <Header 
-          showSidebar={showSidebar} 
-          handleToggleSidebar={this.hideComponentSidebar}
-          expandNavbar={margin}
-        />
-        {showSidebar && <Sidebar />}
-        <Content 
-          expandContent={margin} 
-        />
-        <Footer 
-          expandFooter={margin}
-        />
       </div>
     );
   }
