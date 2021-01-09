@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/admin-panel-react/static/css/main.7157480e.chunk.css",
-    "main.js": "/admin-panel-react/static/js/main.bbcc065e.chunk.js",
-    "main.js.map": "/admin-panel-react/static/js/main.bbcc065e.chunk.js.map",
-    "runtime-main.js": "/admin-panel-react/static/js/runtime-main.922dfa72.js",
-    "runtime-main.js.map": "/admin-panel-react/static/js/runtime-main.922dfa72.js.map",
-    "static/js/2.e1afede9.chunk.js": "/admin-panel-react/static/js/2.e1afede9.chunk.js",
-    "static/js/2.e1afede9.chunk.js.map": "/admin-panel-react/static/js/2.e1afede9.chunk.js.map",
-    "static/js/3.e325e258.chunk.js": "/admin-panel-react/static/js/3.e325e258.chunk.js",
-    "static/js/3.e325e258.chunk.js.map": "/admin-panel-react/static/js/3.e325e258.chunk.js.map",
+    "main.css": "/admin-panel-react/static/css/main.f5e32966.chunk.css",
+    "main.js": "/admin-panel-react/static/js/main.59c8d5ea.chunk.js",
+    "main.js.map": "/admin-panel-react/static/js/main.59c8d5ea.chunk.js.map",
+    "runtime-main.js": "/admin-panel-react/static/js/runtime-main.7334e3a9.js",
+    "runtime-main.js.map": "/admin-panel-react/static/js/runtime-main.7334e3a9.js.map",
+    "static/js/2.2f796c8d.chunk.js": "/admin-panel-react/static/js/2.2f796c8d.chunk.js",
+    "static/js/2.2f796c8d.chunk.js.map": "/admin-panel-react/static/js/2.2f796c8d.chunk.js.map",
+    "static/js/3.b6284ea0.chunk.js": "/admin-panel-react/static/js/3.b6284ea0.chunk.js",
+    "static/js/3.b6284ea0.chunk.js.map": "/admin-panel-react/static/js/3.b6284ea0.chunk.js.map",
     "index.html": "/admin-panel-react/index.html",
-    "static/css/main.7157480e.chunk.css.map": "/admin-panel-react/static/css/main.7157480e.chunk.css.map",
-    "static/js/2.e1afede9.chunk.js.LICENSE.txt": "/admin-panel-react/static/js/2.e1afede9.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/admin-panel-react/static/media/Roobert-Regular.cb46cff6.otf",
-    "static/media/bell.0001c48b.svg": "/admin-panel-react/static/media/bell.0001c48b.svg",
-    "static/media/logo-no-trace.8798001d.png": "/admin-panel-react/static/media/logo-no-trace.8798001d.png",
-    "static/media/menu-hamburger.51815719.svg": "/admin-panel-react/static/media/menu-hamburger.51815719.svg",
-    "static/media/user-profile.a85c8195.svg": "/admin-panel-react/static/media/user-profile.a85c8195.svg"
+    "static/css/main.f5e32966.chunk.css.map": "/admin-panel-react/static/css/main.f5e32966.chunk.css.map",
+    "static/js/2.2f796c8d.chunk.js.LICENSE.txt": "/admin-panel-react/static/js/2.2f796c8d.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/admin-panel-react/static/media/Helvetica.06113bf7.ttf",
+    "static/media/logo-no-trace.8798001d.png": "/admin-panel-react/static/media/logo-no-trace.8798001d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.922dfa72.js",
-    "static/js/2.e1afede9.chunk.js",
-    "static/css/main.7157480e.chunk.css",
-    "static/js/main.bbcc065e.chunk.js"
+    "static/js/runtime-main.7334e3a9.js",
+    "static/js/2.2f796c8d.chunk.js",
+    "static/css/main.f5e32966.chunk.css",
+    "static/js/main.59c8d5ea.chunk.js"
   ]
 }
