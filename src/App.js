@@ -1,38 +1,49 @@
-import React from 'react';
-import './styles/main.scss';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import axios from "axios";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-        showSidebar: true
+import Home from "./components/Home";
+import Login from "./components/Login";
+import MainPanel from "./components/MainPanel";
+
+import PrivateRoute from "./utils/PrivateRoute";
+import PublicRoute from "./utils/PublicRoute";
+import { getToken, removeUserSession, setUserSession } from "./utils/Common";
+
+function App() {
+  const [authLoading, setAuthLoading] = useState(true);
+
+  useEffect(() => {
+    const token = getToken();
+    if (!token) {
+      return;
     }
-    this.hideComponentSidebar = this.hideComponentSidebar.bind(this)
+    axios
+      .get(`http://localhost:4000/verifyToken?token=${token}`)
+      .then((response) => {
+        setUserSession(response.data.token, response.data.user);
+        setAuthLoading(false);
+      })
+      .catch((error) => {
+        removeUserSession();
+        setAuthLoading(false);
+      });
+  }, []);
+
+  if (authLoading && getToken()) {
+    return <div className="content">Checking authentication...</div>;
   }
 
-  hideComponentSidebar() {
-    this.setState({
-        showSidebar: !this.state.showSidebar
-    })
-  }
-
-  render() {
-    let margin = {}
-    if (this.state.showSidebar) {
-      margin = {
-        marginLeft: 250
-      }      
-    } else {
-      margin = {
-        marginLeft: 0
-      }
-    }
-    const {showSidebar} = this.state
-    return (
-      <div className="wrapper">
+  return (
+    <Router basename="/admin-panel-react/">
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <PublicRoute path="/login" component={Login} />
+          <PrivateRoute path="/dashboard" component={MainPanel} />
+        </Switch>
       </div>
-    );
-  }
+    </Router>
+  );
 }
-
 export default App;
