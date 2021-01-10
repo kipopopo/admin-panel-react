@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Logo from "../assets/logo-no-trace.png";
 import { removeUserSession } from "../utils/Common";
 
 const Nav = (props) => {
+  const [isUserMenuOpen, setisUserMenuOpen] = useState(false);
+
+  const handleClick = (e) => {
+    if (node.current.contains(e.target)) {
+      return;
+    }
+    setisUserMenuOpen(false);
+  };
+
+  const handleOpenUserMenu = () => {
+    setisUserMenuOpen(!isUserMenuOpen);
+  };
+
+  const node = useRef();
+  useEffect(() => {
+    document.addEventListener("mouseup", handleClick);
+    return () => {
+      document.removeEventListener("mouseup", handleClick);
+    };
+  }, []);
+
   const handleLogout = () => {
     removeUserSession();
     props.history.push("/login");
@@ -40,9 +61,9 @@ const Nav = (props) => {
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
@@ -61,9 +82,9 @@ const Nav = (props) => {
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
@@ -118,9 +139,9 @@ const Nav = (props) => {
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                 />
               </svg>
@@ -133,6 +154,8 @@ const Nav = (props) => {
                   className="bg-yellow-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-yellow-800 focus:ring-white"
                   id="user-menu"
                   aria-haspopup="true"
+                  onClick={handleOpenUserMenu}
+                  ref={node}
                 >
                   <span className="sr-only">Open user menu</span>
                   <img
@@ -153,7 +176,9 @@ const Nav = (props) => {
               To: "transform opacity-0 scale-95"
           --> */}
               <div
-                className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+                className={`${
+                  !isUserMenuOpen ? "hidden" : "block"
+                } origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5`}
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="user-menu"

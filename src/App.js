@@ -37,11 +37,18 @@ function App() {
   return (
     <Router basename="/admin-panel-react/">
       <div className="App">
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <PublicRoute path="/login" component={Login} />
-          <PrivateRoute path="/dashboard" component={MainPanel} />
-        </Switch>
+        <div
+          className="
+            animate-gradient-color
+            bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500
+            bg-400%"
+        >
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <PublicRoute path="/login" component={Login} />
+            <PrivateRoute path="/dashboard" component={MainPanel} />
+          </Switch>
+        </div>
       </div>
     </Router>
   );
