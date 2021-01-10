@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
+
+import { useSelector } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import axios from "axios";
 
 import Home from "./components/Home";
@@ -11,6 +14,7 @@ import PublicRoute from "./utils/PublicRoute";
 import { getToken, removeUserSession, setUserSession } from "./utils/Common";
 
 function App() {
+  const isBgGradient = useSelector((state) => state.isBgGradientReducer);
   const [authLoading, setAuthLoading] = useState(true);
 
   useEffect(() => {
@@ -38,10 +42,14 @@ function App() {
     <Router basename="/admin-panel-react/">
       <div className="App">
         <div
-          className="
+          className={
+            isBgGradient
+              ? `
             animate-gradient-color
             bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500
-            bg-400%"
+            bg-400%`
+              : null
+          }
         >
           <Switch>
             <Route path="/" exact component={Home} />

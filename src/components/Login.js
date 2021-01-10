@@ -1,9 +1,16 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { isBgGradientOn } from "../redux/actions";
+
 import axios from "axios";
 import { setUserSession } from "../utils/Common";
+
 import Logo from "../assets/logo-no-trace.png";
 
 const Login = (props) => {
+  const dispatch = useDispatch();
+  dispatch(isBgGradientOn());
+
   const [loading, setLoading] = useState(false);
   const username = useFormInput("");
   const password = useFormInput("");
@@ -58,7 +65,16 @@ const Login = (props) => {
                 Username
               </label>
               <input
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 sm:text-sm"
+                className="
+                  appearance-none rounded-none relative 
+                  block w-full px-3 py-2 mb-3
+                  bg-transparent 
+                  border-2 border-white border-opacity-50
+                  placeholder-white placeholder-opacity-50 
+                  text-white 
+                  rounded-lg 
+                  focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:border-opacity-100 focus:z-10 
+                  sm:text-md md:text-xl lg:text-2xl"
                 type="text"
                 id="username"
                 name="username"
@@ -73,7 +89,16 @@ const Login = (props) => {
                 Password
               </label>
               <input
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 sm:text-sm"
+                className="
+                  appearance-none rounded-none relative 
+                  block w-full px-3 py-2 mb-3
+                  bg-transparent 
+                  border-2 border-white border-opacity-50
+                  placeholder-white placeholder-opacity-50 
+                  text-white 
+                  rounded-lg 
+                  focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:border-opacity-100 focus:z-10 
+                  sm:text-md md:text-xl lg:text-2xl"
                 id="password"
                 name="password"
                 type="password"
@@ -84,7 +109,7 @@ const Login = (props) => {
             </div>
           </div>
 
-          <div className="flex items-center justify-between">
+          {/* <div className="flex items-center justify-between">
             <div className="flex items-center">
               <input
                 id="remember_me"
@@ -99,33 +124,45 @@ const Login = (props) => {
                 Remember me
               </label>
             </div>
-          </div>
+          </div> */}
 
-          <div>
+          <div
+            className="
+                flex justify-center"
+          >
             {error && (
-              <>
+              <div
+                className="
+              w-max rounded-md
+              px-2 py-1
+              bg-white bg-opacity-50
+              transition-all duration-200
+              hover:bg-opacity-100"
+              >
                 <small style={{ color: "red" }}>{error}</small>
                 <br />
-              </>
+              </div>
             )}
           </div>
 
           <div className="flex justify-center">
             <button
-              className="group relative 
-                         w-1/2 
-                         flex justify-center
-                         py-2 px-4 
-                         border border-transparent 
-                         text-sm font-medium 
-                         rounded-md 
-                         text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+              className="
+                group relative w-1/3 flex justify-center py-3 px-4 
+                bg-black bg-opacity-50 rounded-md border border-transparent 
+                text-yellow-200 text-xl font-bold 
+                transition-all duration-200
+                hover:bg-yellow-800 hover:bg-opacity-100
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
               onClick={handleLogin}
               disabled={loading}
             >
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                 <svg
-                  className="h-5 w-5 text-yellow-500 group-hover:text-yellow-400"
+                  className="
+                    h-5 w-5 text-yellow-500 
+                    transition-all duration-200
+                    group-hover:text-yellow-200"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
