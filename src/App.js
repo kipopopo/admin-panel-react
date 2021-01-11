@@ -9,8 +9,8 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import MainPanel from "./components/MainPanel";
 
-import PrivateRoute from "./utils/PrivateRoute";
-import PublicRoute from "./utils/PublicRoute";
+import PrivateRoute from "./utils/Routes/PrivateRoute";
+import PublicRoute from "./utils/Routes/PublicRoute";
 import { getToken, removeUserSession, setUserSession } from "./utils/Common";
 
 function App() {
