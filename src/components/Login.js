@@ -47,7 +47,7 @@ const Login = (props) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
+      <div>
         <div>
           <img className="mx-auto h-20 w-auto" src={Logo} alt="Flito" />
           <h2
@@ -205,6 +205,21 @@ const Login = (props) => {
           </div>
         </form>
       </div>
+      <button
+        className="
+          absolute bottom-0 right-0 
+          px-4 py-2 
+          mr-4 mb-4
+          transition-all duration-200
+          bg-yellow-800 bg-opacity-50 rounded-md
+          text-md font-bold text-yellow-200 
+          hover:bg-yellow-700 hover:bg-opacity-100
+          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500
+        "
+        onClick={(e) => props.history.push("/")}
+      >
+        Back to Home
+      </button>
     </div>
   );
 };
