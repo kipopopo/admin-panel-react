@@ -1,4 +1,6 @@
+import React from "react";
 import Nav from "./Nav";
+import MapSection from "./GoogleMap/Map";
 
 import { useDispatch } from "react-redux";
 import { isBgGradientOff } from "../redux/actions";
@@ -16,7 +18,7 @@ const MainPanel = (props) => {
     <div className="MainPanel">
       <Nav history={props.history} />
       <div className="content">
-        <p>Welcome {user.name}!</p>
+        <MapSection />
       </div>
     </div>
   );
