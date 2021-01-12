@@ -1,12 +1,14 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import locationIcon from "@iconify/icons-mdi/map-marker";
+import carIcon from "@iconify-icons/fa-solid/car";
 
-const LocationPin = ({ text }) => {
+const LocationPin = ({ text, sizeDiff }) => {
   return (
     <div className="pin">
-      <Icon icon={locationIcon} className="pin-icon" />
-      <p className="pin-text">{text}</p>
+      <Icon icon={carIcon} className="icon-car" />
+      <div>
+        <p className="text">{text}</p>
+      </div>
     </div>
   );
 };

@@ -4,13 +4,16 @@ import LocationPin from "./LocationPin";
 import "./map.css";
 
 const Map = () => {
+  const defaultZoom = 18;
   const [center, setCenter] = useState([2.483653, 102.851613]);
-  const [zoom, setZoom] = useState(17);
+  const [zoom, setZoom] = useState(defaultZoom);
 
   const handleChange = ({ center, zoom }) => {
     setCenter(center);
     setZoom(zoom);
   };
+
+  let sizeDiff = defaultZoom - zoom;
 
   return (
     <div className="map">
@@ -21,7 +24,12 @@ const Map = () => {
           center={center}
           zoom={zoom}
         >
-          <LocationPin lat={2.483653} lng={102.851613} text="Your location." />
+          <LocationPin
+            lat={2.483653}
+            lng={102.851613}
+            text="Car 1"
+            sizeDiff={sizeDiff}
+          />
         </GoogleMapReact>
       </div>
     </div>
