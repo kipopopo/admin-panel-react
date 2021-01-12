@@ -11,8 +11,8 @@ const Nav = (props) => {
   };
 
   return (
-    <nav className="bg-yellow-500">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <nav className="sticky top-0 bg-yellow-500 z-10">
+      <div className=" max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
@@ -84,7 +84,7 @@ const Nav = (props) => {
               </div>
             </div>
             <div className="hidden sm:block sm:ml-6">
-              <NavMenu location={props.location} />
+              <NavMenu />
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">

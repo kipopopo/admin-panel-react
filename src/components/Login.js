@@ -28,7 +28,7 @@ const Login = (props) => {
       .then((response) => {
         setLoading(false);
         setUserSession(response.data.token, response.data.user);
-        props.history.push("/dashboard");
+        props.history.push("/user");
         window.location.reload(false);
       })
       .catch((error) => {

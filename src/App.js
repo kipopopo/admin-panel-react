@@ -54,7 +54,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <PublicRoute path="/login" component={Login} />
-            <PrivateRoute path="/dashboard" component={MainPanel} />
+            <PrivateRoute path="/user" component={MainPanel} />
           </Switch>
         </div>
       </div>
