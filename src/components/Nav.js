@@ -1,4 +1,5 @@
 import React from "react";
+import NavMenu from "./NavMenu";
 import { NavDropNotification, NavDropUser } from "./NavDrops";
 import Logo from "../assets/logo-no-trace.png";
 
@@ -83,28 +84,14 @@ const Nav = (props) => {
               </div>
             </div>
             <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4">
-                {/* <!-- Current: "bg-yellow-900 text-white", Default: "text-gray-800 hover:bg-yellow-700 hover:text-white" --> */}
-                <div className="bg-yellow-900 text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                  Dashboard
-                </div>
-                <div className="text-gray-800 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                  Team
-                </div>
-                <div className="text-gray-800 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                  Projects
-                </div>
-                <div className="text-gray-800 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                  Calendar
-                </div>
-              </div>
+              <NavMenu location={props.location} />
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            {/* Notification dropdown */}
             <NavDropNotification />
 
-            {/* <!-- Profile dropdown --> */}
-
+            {/* Profile dropdown */}
             <NavDropUser history={props.history} />
           </div>
         </div>

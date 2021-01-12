@@ -18,8 +18,8 @@ const Map = () => {
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_API_KEY }}
           onChange={handleChange}
-          defaultCenter={center}
-          defaultZoom={zoom}
+          center={center}
+          zoom={zoom}
         >
           <LocationPin lat={2.483653} lng={102.851613} text="Your location." />
         </GoogleMapReact>
