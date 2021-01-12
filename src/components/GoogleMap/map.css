@@ -6,36 +6,35 @@
 }
 
 .pin {
-  display: flex;
-  align-items: center;
-  width: 20rem;
-  color: #f2ac0a;
-  margin: -3.2rem 0 0 -1.5rem;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  margin-left: -2.75rem;
+  margin-top: -2.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(245, 158, 11, var(--tw-text-opacity));
 }
 
-.pin-icon {
-  font-size: 4rem;
+.pin .icon-car {
+  width: 6rem;
+  margin-bottom: -0.25rem;
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
-.pin-text {
-  font-size: 1.3em;
+.pin .text {
+  text-align: center;
+  padding: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 
 @media screen and (min-width: 799px) {
   .google-map {
     height: 93vh;
-  }
-
-  .map-h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-  }
-
-  .pin {
-    width: 15rem;
-  }
-
-  .pin-icon {
-    font-size: 3rem;
   }
 }
