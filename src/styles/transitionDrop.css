@@ -1,0 +1,28 @@
+/* Entering: "transition ease-out duration-100"
+From: "transform opacity-0 scale-95"
+To: "transform opacity-100 scale-100"
+Leaving: "transition ease-in duration-75"
+From: "transform opacity-100 scale-100"
+To: "transform opacity-0 scale-95" */
+
+.drop-enter {
+  transform: scaleY(0);
+}
+.drop-enter-active {
+  transform: scaleY(1);
+  transition: all ease-out 150ms;
+}
+.drop-enter-done {
+  opacity: 1;
+}
+
+.drop-exit {
+  transform: scaleY(1);
+}
+.drop-exit-active {
+  transform: scaleY(0);
+  transition: all ease-out 150ms;
+}
+.drop-exit-done {
+  opacity: 0;
+}
