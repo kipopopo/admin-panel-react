@@ -1,14 +1,24 @@
 import React from "react";
+import { Link, useRouteMatch } from "react-router-dom";
 
 import { removeUserSession } from "../utils/Common";
 import useVisible from "../utils/useVisible";
 
+import { CSSTransition } from "react-transition-group";
+import "../styles/transitionDrop.css";
+
 export const NavDropUser = (props) => {
   const { node, isVisible, setIsVisible } = useVisible(false);
 
+  const menuItems = [
+    { name: "Profile", path: "profile" },
+    { name: "Settings", path: "settings" },
+  ];
+
+  let { url } = useRouteMatch();
+
   const handleLogout = () => {
     removeUserSession();
-    props.history.push("/login");
   };
 
   return (
@@ -36,44 +46,40 @@ export const NavDropUser = (props) => {
           </svg>
         </button>
       </div>
-      {/* <!--
-            Profile dropdown panel, show/hide based on dropdown state.
-
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-      --> */}
-      {isVisible && (
+      <CSSTransition
+        in={isVisible}
+        timeout={150}
+        unmountOnExit
+        classNames="drop"
+      >
         <div
-          className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+          className="origin-top-right absolute right-0 mt-4 w-48 rounded-b-lg shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="user-menu"
         >
-          <div
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 cursor-pointer"
-            role="menuitem"
-          >
-            Your Profile
-          </div>
-          <div
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 cursor-pointer"
-            role="menuitem"
-          >
-            Settings
-          </div>
-          <div
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 cursor-pointer"
-            role="menuitem"
-            onClick={handleLogout}
-          >
-            Sign out
-          </div>
+          {menuItems.map((item) => (
+            <Link to={`${url}/${item.path}`}>
+              <div
+                key={item.name}
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 cursor-pointer"
+                role="menuitem"
+              >
+                {item.name}
+              </div>
+            </Link>
+          ))}
+          <Link to="/login">
+            <div
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 cursor-pointer"
+              role="menuitem"
+              onClick={handleLogout}
+            >
+              Sign out
+            </div>
+          </Link>
         </div>
-      )}
+      </CSSTransition>
     </div>
   );
 };
@@ -90,7 +96,6 @@ export const NavDropNotification = () => {
         onClick={(e) => setIsVisible(!isVisible)}
       >
         <span className="sr-only">View notifications</span>
-        {/* <!-- Heroicon name: bell --> */}
         <svg
           className="h-6 w-6"
           xmlns="http://www.w3.org/2000/svg"
@@ -107,9 +112,14 @@ export const NavDropNotification = () => {
           />
         </svg>
       </button>
-      {isVisible && (
+      <CSSTransition
+        in={isVisible}
+        timeout={150}
+        unmountOnExit
+        classNames="drop"
+      >
         <div
-          className="origin-top-right absolute right-0 mt-2 w-56 h-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+          className="origin-top-right absolute right-0 mt-4 w-56 h-48 rounded-b-lg shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="notification-menu"
@@ -121,7 +131,7 @@ export const NavDropNotification = () => {
             Notification displays here
           </div>
         </div>
-      )}
+      </CSSTransition>
     </div>
   );
 };
