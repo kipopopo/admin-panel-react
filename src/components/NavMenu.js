@@ -22,6 +22,7 @@ const NavMenu = () => {
     } else {
       classItemFocus = outFocus;
     }
+
     return (
       <Link key={item.path} to={`${url}/${item.path}`}>
         <div className={classItemFocus}>{item.name}</div>
