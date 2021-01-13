@@ -14,9 +14,15 @@ const MainPanel = (props) => {
 
   // changing state of background gradient to false
   const dispatch = useDispatch();
+
   useEffect(() => {
+    const PrevTitle = document.title;
+    document.title = `Dashboard`;
     dispatch(isBgGradientOff());
-  }, [dispatch]);
+    return () => {
+      document.title = PrevTitle;
+    };
+  });
 
   // const user = getUser();
 
