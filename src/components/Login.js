@@ -69,7 +69,11 @@ const Login = (props) => {
       >
         <div>
           <div>
-            <img className="mx-auto h-20 w-auto" src={Logo} alt="Flito" />
+            <img
+              className="logo-login mx-auto h-20 w-auto"
+              src={Logo}
+              alt="Flito"
+            />
             <h2
               className="mt-6 text-center text-4xl font-bold text-gray-900"
               style={styles.headingTitle}

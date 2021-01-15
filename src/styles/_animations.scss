@@ -1,0 +1,15 @@
+.logo-login {
+  animation: levitate 3s ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(0.25rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
