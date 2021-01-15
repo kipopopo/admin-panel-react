@@ -13,7 +13,7 @@ const Map = () => {
     setZoom(zoom);
   };
 
-  let sizeDiff = defaultZoom - zoom;
+  let sizeDiff = (defaultZoom - zoom) / 12.5;
 
   return (
     <div className="map">
