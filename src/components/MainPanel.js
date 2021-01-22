@@ -3,6 +3,7 @@ import { Switch, Route, useRouteMatch } from "react-router-dom";
 
 import Nav from "./Nav";
 import MapSection from "./GoogleMap/Map";
+import VehicleRoute from './VehicleRoute'
 
 import { useDispatch } from "react-redux";
 import { isBgGradientOff } from "../redux/actions";
@@ -34,10 +35,8 @@ const MainPanel = (props) => {
           <Route path={`${path}`} exact>
             <MapSection />
           </Route>
-          <Route path={`${path}/menu-2`}>
-            <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-              <div>menu 2</div>
-            </div>
+          <Route path={`${path}/route`}>
+              <VehicleRoute/>
           </Route>
           <Route path={`${path}/menu-3`}>
             <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">

@@ -3,7 +3,7 @@ import { Link, useRouteMatch, useLocation } from "react-router-dom";
 
 const NavMenu = () => {
   const menuItems = [
-    { name: "Menu 2", path: "menu-2" },
+    { name: "Route", path: "route" },
     { name: "Menu 3", path: "menu-3" },
   ];
 
