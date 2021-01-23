@@ -1,6 +1,6 @@
 import React from "react";
 
-import VehicleMenu from "./VehicleMenu";
+import VehicleMenu from "./VehicleTree/VehicleMenu";
 
 export default function VehicleRoute() {
   return (
