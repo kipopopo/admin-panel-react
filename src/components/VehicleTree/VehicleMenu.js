@@ -3,6 +3,7 @@ import { useSpring, a } from "react-spring";
 
 import { Icon } from "@iconify/react";
 import carIcon from "@iconify-icons/fa-solid/car";
+import bxsTruck from "@iconify-icons/bx/bxs-truck";
 
 import { useMeasure, usePrevious } from "./helpers";
 import { Frame, Title, Content, toggle } from "../../styles/styles";
@@ -38,6 +39,9 @@ const Tree = memo(({ children, name, style, defaultOpen = false }) => {
           onClick={() => setOpen(!isOpen)}
         />
         {name === "Cars" ? <Icon icon={carIcon} className="mr-2" /> : null}
+        {name === "Trucks" || name === "Motorcars" ? (
+          <Icon icon={bxsTruck} className="mr-2" />
+        ) : null}
         <Title style={style}>{name}</Title>
       </div>
       <Content
