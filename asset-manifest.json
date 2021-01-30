@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/admin-panel-react/static/css/main.bb5e6c7c.chunk.css",
-    "main.js": "/admin-panel-react/static/js/main.9e759f88.chunk.js",
-    "main.js.map": "/admin-panel-react/static/js/main.9e759f88.chunk.js.map",
-    "runtime-main.js": "/admin-panel-react/static/js/runtime-main.ee844685.js",
-    "runtime-main.js.map": "/admin-panel-react/static/js/runtime-main.ee844685.js.map",
-    "static/js/2.fee36e6a.chunk.js": "/admin-panel-react/static/js/2.fee36e6a.chunk.js",
-    "static/js/2.fee36e6a.chunk.js.map": "/admin-panel-react/static/js/2.fee36e6a.chunk.js.map",
-    "static/js/3.09451718.chunk.js": "/admin-panel-react/static/js/3.09451718.chunk.js",
-    "static/js/3.09451718.chunk.js.map": "/admin-panel-react/static/js/3.09451718.chunk.js.map",
+    "main.css": "/admin-panel-react/static/css/main.c4315d49.chunk.css",
+    "main.js": "/admin-panel-react/static/js/main.cb9ea9b0.chunk.js",
+    "main.js.map": "/admin-panel-react/static/js/main.cb9ea9b0.chunk.js.map",
+    "runtime-main.js": "/admin-panel-react/static/js/runtime-main.b93797a1.js",
+    "runtime-main.js.map": "/admin-panel-react/static/js/runtime-main.b93797a1.js.map",
+    "static/js/2.5e663a99.chunk.js": "/admin-panel-react/static/js/2.5e663a99.chunk.js",
+    "static/js/2.5e663a99.chunk.js.map": "/admin-panel-react/static/js/2.5e663a99.chunk.js.map",
+    "static/js/3.5bdd120c.chunk.js": "/admin-panel-react/static/js/3.5bdd120c.chunk.js",
+    "static/js/3.5bdd120c.chunk.js.map": "/admin-panel-react/static/js/3.5bdd120c.chunk.js.map",
     "index.html": "/admin-panel-react/index.html",
-    "static/css/main.bb5e6c7c.chunk.css.map": "/admin-panel-react/static/css/main.bb5e6c7c.chunk.css.map",
-    "static/js/2.fee36e6a.chunk.js.LICENSE.txt": "/admin-panel-react/static/js/2.fee36e6a.chunk.js.LICENSE.txt",
+    "static/css/main.c4315d49.chunk.css.map": "/admin-panel-react/static/css/main.c4315d49.chunk.css.map",
+    "static/js/2.5e663a99.chunk.js.LICENSE.txt": "/admin-panel-react/static/js/2.5e663a99.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/admin-panel-react/static/media/Roobert-SemiBold.aabbb49d.otf",
     "static/media/logo-no-trace.8798001d.png": "/admin-panel-react/static/media/logo-no-trace.8798001d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee844685.js",
-    "static/js/2.fee36e6a.chunk.js",
-    "static/css/main.bb5e6c7c.chunk.css",
-    "static/js/main.9e759f88.chunk.js"
+    "static/js/runtime-main.b93797a1.js",
+    "static/js/2.5e663a99.chunk.js",
+    "static/css/main.c4315d49.chunk.css",
+    "static/js/main.cb9ea9b0.chunk.js"
   ]
 }
